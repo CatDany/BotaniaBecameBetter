@@ -1,0 +1,16 @@
+[
+{
+  "modid": "BotaniaBecameBetter",
+  "name": "BotaniaBecameBetter",
+  "description": "B^3 and Botania suddenly became better!",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["CatDany"],
+  "credits": "Vazkii for making Botania",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

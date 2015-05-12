@@ -1,0 +1,40 @@
+tile.BotaniaBecameBetter:ManaSpawner.name=Unactivated Mana Mob Spawner
+tile.BotaniaBecameBetter:FlowerHydrafatus.name=Hydrafatus
+tile.BotaniaBecameBetter:FlowerRedahlia.name=Redahlia
+
+item.BotaniaBecameBetter:ElvenTablet.name=Elven Mana Tablet
+item.BotaniaBecameBetter:Canvas.name=Mana Infused Canvas
+item.BotaniaBecameBetter:Bag.name=Mana Canvas Bag
+
+bbb.tablet.empty=This tablet is empty.
+bbb.tablet.almostEmpty=This tablet is almost empty.
+bbb.tablet.less25=This tablet is less than a quarter full.
+bbb.tablet.less40=This tablet is more than a quarter full.
+bbb.tablet.about50=This tablet is about half-full.
+bbb.tablet.less60=This tablet is less than three quarters full.
+bbb.tablet.less90=This tablet is more than three quarters full.
+bbb.tablet.almostFull=This tablet is almost full.
+bbb.tablet.full=This tablet is full.
+
+botania.category.bbb=BotaniaBecameBetter Mod
+
+botania.entry.ManaSpawner=Moving Mob Spawners
+botania.page.ManaSpawner0=It is possible to move a &1Mob Spawner&0 using &4Botania&0.<br>When you break &1Mob Spawner&0 naturally generated in the world, you'll get an &1Unactivated Mana Mob Spawner&0 bound to the same type of Mob. Place it in the world and supply with half a &1Mana Pool&0 worth of &4Mana&0 to get a normal &1Mob Spawner&0 again. It's highly recommended to use &1Sparks&0 for that.
+botania.page.ManaSpawner1=Do note that if you break the activated &1Mob Spawner&0 you'll get an unactivated version of it, so be careful when choosing a place for it to be at. Moving it in the future may cost you some amount of &4Mana&0.
+
+botania.entry.FlowerHydrafatus=Hydrafatus
+botania.page.FlowerHydrafatus0=Have you ever crafted a lot of &4Flora&0 using &1Petal Apothecary&0 at once? You probably know how annoying it is to refill it with &1Water&0 every time. We've got an easy solution for you. &1Hydrafatus&0 works similarly to &1Hydrangeas&0, it drains &1Water&0 nearby and fills adjacent &1Petal Apothecary&0. It does not require any &4Mana&0, so it's simple to use in early play with &4Botania&0.
+botania.page.FlowerHydrafatus1=&oIt ate all the water, now it fatus.&r
+
+botania.entry.FlowerRedahlia=Redahlia
+botania.page.FlowerRedahlia0=Ever wanted to automate breeding your cattle with &4Flora&0? Well, your dream has come true. &1Redahlia&0 is a flower that will force animals around it to breed. It does not require any &1Wheat&0 or anything, just a steady supply of &4Mana&0. You'll need about as much &4Mana&0 for one breed as you'll need to infuse a &1Mana Petal&0.
+botania.page.FlowerRedahlia1=&oRed dahlia? Absolutely no.&r
+
+botania.entry.ElvenTablet=Elven Mana Tablet
+botania.page.ElvenTablet0=&4Elves&0 think that if you want to store &4Mana&0, you need to store a lot of it. So here we go, by combining &1Dragonstone&0 with some &1Livingrock&0, you can make an &1Elven Mana Tablet&0 that holds up to two full &1Mana Pools&0 worth of &4Mana&0.
+botania.page.ElvenTablet1=Don't worry, it won't bend
+
+botania.entry.Bag=Mana Canvas Bag
+botania.page.Bag0=&1Mana Infused String&0 is a really handy material. It can be used to create &1Mana Infused Canvas&0 and then &1Mana Canvas Bags&0. Those bags are almost like &1Chest&0, except you can hold it in your pocket. It's &omagical&r, so you can even put a &1Beacon&0 there and the bag will still be tiny as it was before.
+botania.page.Bag1=Creating &1Mana Infused Canvas&0
+botania.page.Bag2=&0It's magic, you know!&r
