@@ -25,6 +25,7 @@ public class TileManaSpawner extends TileEntity implements ISparkAttachable
 	
 	public int manaStored = 0;
 	public NBTTagCompound spawnerData;
+	public boolean consumeDrops = false;
 	
 	@Override
 	public void updateEntity()
@@ -48,6 +49,7 @@ public class TileManaSpawner extends TileEntity implements ISparkAttachable
 			{
 				worldObj.removeEntity((Entity)spark);
 			}
+			consumeDrops = true;
 			worldObj.setBlock(xCoord, yCoord, zCoord, Blocks.mob_spawner);
 			TileEntityMobSpawner tile = (TileEntityMobSpawner)worldObj.getTileEntity(xCoord, yCoord, zCoord);
 			spawnerData.setInteger("x", xCoord);

@@ -58,11 +58,14 @@ public class BlockManaSpawner extends BlockContainer
 	{
 		ItemStack stack = new ItemStack(BlockRepo.manaSpawner);
 		TileManaSpawner tile = (TileManaSpawner)world.getTileEntity(x, y, z);
-		stack.setTagCompound(new NBTTagCompound());
-		stack.getTagCompound().setTag("SpawnerData", tile.spawnerData);
-		EntityItem entityItem = new EntityItem(world, x + 0.5, y + 0.5, z + 0.5, stack);
-		world.spawnEntityInWorld(entityItem);
-		Log.debug("Dropped Unactivated Mana Spawner at coords {%s; %s; %s} in dimension {%s} of type {%s}", x, y, z, WorldUtils.getDimensionId(world), tile.spawnerData.getString("EntityId"));
+		if (!tile.consumeDrops)
+		{
+			stack.setTagCompound(new NBTTagCompound());
+			stack.getTagCompound().setTag("SpawnerData", tile.spawnerData);
+			EntityItem entityItem = new EntityItem(world, x + 0.5, y + 0.5, z + 0.5, stack);
+			world.spawnEntityInWorld(entityItem);
+			Log.debug("Dropped Unactivated Mana Spawner at coords {%s; %s; %s} in dimension {%s} of type {%s}", x, y, z, WorldUtils.getDimensionId(world), tile.spawnerData.getString("EntityId"));
+		}
 	}
 	
 	@Override
