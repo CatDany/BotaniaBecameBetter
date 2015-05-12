@@ -1,5 +1,7 @@
 package catdany.bbb.items;
 
+import java.util.List;
+
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
@@ -36,6 +38,12 @@ public class ItemBag extends Item
 	public void registerIcons(IIconRegister reg)
 	{
 		itemIcon = IconRegHelper.regItem(this, reg);
+	}
+	
+	@Override
+	public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4)
+	{
+		//TODO: List all items when holding shift
 	}
 	
 	@Override
