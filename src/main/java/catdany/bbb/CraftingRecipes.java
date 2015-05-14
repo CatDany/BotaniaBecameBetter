@@ -21,9 +21,14 @@ public class CraftingRecipes
 	public static ShapedRecipes recipeElvenTablet;
 	public static ShapelessRecipes recipeCanvas;
 	public static ShapedRecipes recipeBag;
+	public static ShapedRecipes recipeNovasteelHelm;
+	public static ShapedRecipes recipeNovasteelChest;
+	public static ShapedRecipes recipeNovasteelLegs;
+	public static ShapedRecipes recipeNovasteelBoots;
 	
 	public static void init()
 	{
+		// Hydrafatus
 		recipePetalFlowerHydrafatus =
 				BotaniaAPI.registerPetalRecipe(
 					new ItemStack(BlockRepo.flowerHydrafatus),
@@ -31,6 +36,7 @@ public class CraftingRecipes
 					"manaPetalCyan", "petalCyan", "petalCyan",
 					"manaPetalLightBlue", "petalLightBlue", "petalLightBlue"
 				);
+		// Redahlia
 		recipePetalFlowerRedahlia =
 				BotaniaAPI.registerPetalRecipe(
 					new ItemStack(BlockRepo.flowerRedahlia),
@@ -38,6 +44,7 @@ public class CraftingRecipes
 					"petalBrown", "manaPetalLime", "petalLime",
 					"runeSpringB", "runeGreedB"
 				);
+		// Elven Mana Tablet
 		recipeElvenTablet = new ShapedRecipes(3, 3,
 					new ItemStack[] {
 					new ItemStack(ModBlocks.livingrock), new ItemStack(ModBlocks.livingrock), new ItemStack(ModBlocks.livingrock),
@@ -46,12 +53,14 @@ public class CraftingRecipes
 					new ItemStack(ItemRepo.elvenTablet)
 				);
 		GameRegistry.addRecipe(recipeElvenTablet);
+		// Mana Canvas
 		recipeCanvas = new ShapelessRecipes(
 					new ItemStack(ItemRepo.canvas), Arrays.asList(
 					new ItemStack(ModItems.manaResource, 1, 16),
 					new ItemStack(Items.stick))
 				);
 		GameRegistry.addRecipe(recipeCanvas);
+		// Mana Canvas Bag
 		recipeBag = new ShapedRecipes(3, 3,
 					new ItemStack[] {
 					new ItemStack(ItemRepo.canvas), new ItemStack(ItemRepo.canvas), new ItemStack(ItemRepo.canvas),
@@ -60,5 +69,39 @@ public class CraftingRecipes
 					new ItemStack(ItemRepo.bag)
 				);
 		GameRegistry.addRecipe(recipeBag);
+		// Novasteel Helm
+		recipeNovasteelHelm = new ShapedRecipes(3, 2,
+					new ItemStack[] {
+					new ItemStack(ItemRepo.novasteel), new ItemStack(ItemRepo.novasteel), new ItemStack(ItemRepo.novasteel),
+					new ItemStack(ItemRepo.novasteel), null, new ItemStack(ItemRepo.novasteel)},
+					new ItemStack(ItemRepo.novasteelHelm)
+				);
+		GameRegistry.addRecipe(recipeNovasteelHelm);
+		// Novasteel Chestplate
+		recipeNovasteelChest = new ShapedRecipes(3, 3,
+				new ItemStack[] {
+				new ItemStack(ItemRepo.novasteel), null, new ItemStack(ItemRepo.novasteel),
+				new ItemStack(ItemRepo.novasteel), new ItemStack(ItemRepo.novasteel), new ItemStack(ItemRepo.novasteel),
+				new ItemStack(ItemRepo.novasteel), new ItemStack(ItemRepo.novasteel), new ItemStack(ItemRepo.novasteel)},
+				new ItemStack(ItemRepo.novasteelChest)
+			);
+		GameRegistry.addRecipe(recipeNovasteelChest);
+		// Novasteel Leggings
+		recipeNovasteelLegs = new ShapedRecipes(3, 3,
+				new ItemStack[] {
+				new ItemStack(ItemRepo.novasteel), new ItemStack(ItemRepo.novasteel), new ItemStack(ItemRepo.novasteel),
+				new ItemStack(ItemRepo.novasteel), null, new ItemStack(ItemRepo.novasteel),
+				new ItemStack(ItemRepo.novasteel), null, new ItemStack(ItemRepo.novasteel)},
+				new ItemStack(ItemRepo.novasteelLegs)
+			);
+		GameRegistry.addRecipe(recipeNovasteelLegs);
+		// Novasteel Boots
+		recipeNovasteelBoots = new ShapedRecipes(3, 2,
+				new ItemStack[] {
+				new ItemStack(ItemRepo.novasteel), null, new ItemStack(ItemRepo.novasteel),
+				new ItemStack(ItemRepo.novasteel), null, new ItemStack(ItemRepo.novasteel)},
+				new ItemStack(ItemRepo.novasteelBoots)
+			);
+		GameRegistry.addRecipe(recipeNovasteelBoots);
 	}
 }

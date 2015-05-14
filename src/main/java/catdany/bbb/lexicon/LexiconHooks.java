@@ -11,6 +11,7 @@ public class LexiconHooks
 	public static LexiconFlowerRedahlia entryFlowerRedahlia;
 	public static LexiconElvenTablet entryElvenTablet;
 	public static LexiconBag entryBag;
+	public static LexiconNovasteel entryNovasteel;
 	
 	public static void init()
 	{
@@ -26,5 +27,7 @@ public class LexiconHooks
 		BotaniaAPI.addEntry(entryElvenTablet, categoryBBB);
 		entryBag = new LexiconBag();
 		BotaniaAPI.addEntry(entryBag, categoryBBB);
+		entryNovasteel = new LexiconNovasteel();
+		BotaniaAPI.addEntry(entryNovasteel, categoryBBB);
 	}
 }

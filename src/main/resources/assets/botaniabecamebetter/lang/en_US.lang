@@ -5,6 +5,11 @@ tile.BotaniaBecameBetter:FlowerRedahlia.name=Redahlia
 item.BotaniaBecameBetter:ElvenTablet.name=Elven Mana Tablet
 item.BotaniaBecameBetter:Canvas.name=Mana Infused Canvas
 item.BotaniaBecameBetter:Bag.name=Mana Canvas Bag
+item.BotaniaBecameBetter:Novasteel.name=Novasteel
+item.BotaniaBecameBetter:NovasteelHelm.name=Novasteel Helm
+item.BotaniaBecameBetter:NovasteelChest.name=Novasteel Chestplate
+item.BotaniaBecameBetter:NovasteelLegs.name=Novasteel Leggings
+item.BotaniaBecameBetter:NovasteelBoots.name=Novasteel Boots
 
 bbb.tablet.empty=This tablet is empty.
 bbb.tablet.almostEmpty=This tablet is almost empty.
@@ -38,3 +43,10 @@ botania.entry.Bag=Mana Canvas Bag
 botania.page.Bag0=&1Mana Infused String&0 is a really handy material. It can be used to create &1Mana Infused Canvas&0 and then &1Mana Canvas Bags&0. Those bags are almost like &1Chest&0, except you can hold it in your pocket. It's &omagical&r, so you can even put a &1Beacon&0 there and the bag will still be tiny as it was before.
 botania.page.Bag1=Creating &1Mana Infused Canvas&0
 botania.page.Bag2=&0It's magic, you know!&r
+
+botania.entry.Novasteel=Novasteel
+botania.page.Novasteel0=There are mysterious sparks in the sky that sometimes appear and flash really bright. &4Novas&0 they call them. Their power is insane, if only mortals could use it... Some people made theories about infusing matter of all dimensions, such as &4Alfheim&0, &1Muspelheim&0 and &4Midgard&0 to create &4Novamatter&0. But there's really nothing more we know about it. 
+botania.page.Novasteel1=
+botania.page.Novasteel2=
+botania.page.Novasteel3=
+botania.page.Novasteel4=

@@ -11,6 +11,7 @@ public class LexiconCategoryBBB extends LexiconCategory
 	public LexiconCategoryBBB()
 	{
 		super("botania.category.bbb");
+		//TODO: Fix localization issue when sharing entries (botania.entry.botania.entry.%s)
 	}
 	
 	@Override
