@@ -58,9 +58,14 @@ public class TileFlowerRedahlia extends TileEntity implements IManaBlock
 			if (animals.size() < 30)
 			{
 				ArrayList<EntityAnimal> breedable = new ArrayList<EntityAnimal>();
+				Class<? extends EntityAnimal> animalType = null;
 				for (EntityAnimal i : animals)
 				{
-					if (i.getGrowingAge() == 0 && !i.isInLove())
+					if (animalType == null)
+					{
+						animalType = i.getClass();
+					}
+					if (i.getClass() == animalType && i.getGrowingAge() == 0 && !i.isInLove())
 					{
 						breedable.add(i);
 					}
