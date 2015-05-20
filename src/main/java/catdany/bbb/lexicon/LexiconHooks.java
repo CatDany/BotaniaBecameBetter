@@ -1,6 +1,12 @@
 package catdany.bbb.lexicon;
 
+import java.lang.reflect.Field;
+
+import sun.reflect.Reflection;
 import vazkii.botania.api.BotaniaAPI;
+import vazkii.botania.api.lexicon.LexiconEntry;
+import catdany.bbb.BBBCfg;
+import catdany.bbb.Log;
 
 public class LexiconHooks
 {
@@ -18,16 +24,38 @@ public class LexiconHooks
 		categoryBBB = new LexiconCategoryBBB();
 		BotaniaAPI.addCategory(categoryBBB);
 		entryManaSpawner = new LexiconManaSpawner();
-		BotaniaAPI.addEntry(entryManaSpawner, categoryBBB);
+		addEntry(entryManaSpawner, "enableManaSpawners");
 		entryFlowerHydrafatus = new LexiconFlowerHydrafatus();
-		BotaniaAPI.addEntry(entryFlowerHydrafatus, categoryBBB);
+		addEntry(entryFlowerHydrafatus, null);
 		entryFlowerRedahlia = new LexiconFlowerRedahlia();
-		BotaniaAPI.addEntry(entryFlowerRedahlia, categoryBBB);
+		addEntry(entryFlowerRedahlia, null);
 		entryElvenTablet = new LexiconElvenTablet();
-		BotaniaAPI.addEntry(entryElvenTablet, categoryBBB);
+		addEntry(entryElvenTablet, "enableElvenTablet");
 		entryBag = new LexiconBag();
-		BotaniaAPI.addEntry(entryBag, categoryBBB);
+		addEntry(entryBag, null);
 		entryNovasteel = new LexiconNovasteel();
-		BotaniaAPI.addEntry(entryNovasteel, categoryBBB);
+		addEntry(entryNovasteel, null);
+	}
+	
+	private static void addEntry(LexiconEntry entry, String configOption)
+	{
+		boolean enabled = true;
+		if (configOption != null)
+		{
+			try
+			{
+				Class<BBBCfg> classCfg = BBBCfg.class;
+				Field f = classCfg.getField(configOption);
+				enabled = (Boolean)f.get(null);
+			}
+			catch (ReflectiveOperationException t)
+			{
+				Log.printStackTrace(t, false);
+			}
+		}
+		if (enabled)
+		{
+			BotaniaAPI.addEntry(entry, categoryBBB);
+		}
 	}
 }

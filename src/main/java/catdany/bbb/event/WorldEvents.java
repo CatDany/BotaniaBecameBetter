@@ -6,6 +6,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntityMobSpawner;
 import net.minecraftforge.event.world.BlockEvent;
+import catdany.bbb.BBBCfg;
 import catdany.bbb.Log;
 import catdany.bbb.blocks.BlockRepo;
 import catdany.bbb.libs.WorldUtils;
@@ -16,7 +17,7 @@ public class WorldEvents
 	@SubscribeEvent
 	public void spawnerDrops(BlockEvent.BreakEvent e)
 	{
-		if (e.block == Blocks.mob_spawner)
+		if (BBBCfg.enableManaSpawners && e.block == Blocks.mob_spawner)
 		{
 			ItemStack stack = new ItemStack(BlockRepo.manaSpawner);
 			TileEntityMobSpawner tile = (TileEntityMobSpawner)e.world.getTileEntity(e.x, e.y, e.z);

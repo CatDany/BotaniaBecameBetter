@@ -45,14 +45,17 @@ public class CraftingRecipes
 					"runeSpringB", "runeGreedB"
 				);
 		// Elven Mana Tablet
-		recipeElvenTablet = new ShapedRecipes(3, 3,
+		if (BBBCfg.enableElvenTablet)
+		{
+			recipeElvenTablet = new ShapedRecipes(3, 3,
 					new ItemStack[] {
 					new ItemStack(ModBlocks.livingrock), new ItemStack(ModBlocks.livingrock), new ItemStack(ModBlocks.livingrock),
 					new ItemStack(ModBlocks.livingrock), new ItemStack(ModItems.manaResource, 1, 9), new ItemStack(ModBlocks.livingrock),
 					new ItemStack(ModBlocks.livingrock), new ItemStack(ModBlocks.livingrock), new ItemStack(ModBlocks.livingrock)},
 					new ItemStack(ItemRepo.elvenTablet)
 				);
-		GameRegistry.addRecipe(recipeElvenTablet);
+			GameRegistry.addRecipe(recipeElvenTablet);
+		}
 		// Mana Canvas
 		recipeCanvas = new ShapelessRecipes(
 					new ItemStack(ItemRepo.canvas), Arrays.asList(
