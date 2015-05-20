@@ -36,4 +36,16 @@ public class Log
 		}
 		debug(log + (str.isEmpty() ? "<No data to dump>" : str));
 	}
+	
+	public static void printStackTrace(Throwable t, boolean fatal)
+	{
+		if (fatal)
+		{
+			BBB.log.throwing(t);
+		}
+		else
+		{
+			BBB.log.catching(t);
+		}
+	}
 }
