@@ -1,3 +1,8 @@
+1.7.10-ALPHA-0.1.5
+- Added a config option to disable Elven Mana Tablet (now disabled by default)
+- Fixed derp: config option that was meant to allow people to disable Unactivated Mana Mob Spawners wasn't working. Now it's renamed, so it's brand new.
+- Fixed really small minor mistake in Lexicon localization (wrong color, huh!)
+
 1.7.10-ALPHA-0.1.4
 - Fixed: Unactivated Mana Mob Spawner was dropping itself after activation with mana
 - Redahlia now only breeds one type of animal at a time, so it won't try to breed a sheep with a cow. No artificial selection here, sorry
