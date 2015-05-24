@@ -10,9 +10,11 @@ public class ItemRepo
 	public static ItemBag bag;
 	public static ItemNovasteel novasteel;
 	public static ItemNovasteelArmor novasteelHelm;
+	public static ItemNovasteelArmor novasteelHelmRevealing;
 	public static ItemNovasteelArmor novasteelChest;
 	public static ItemNovasteelArmor novasteelLegs;
 	public static ItemNovasteelArmor novasteelBoots;
+	public static ItemTerraGaia terraGaia;
 	
 	public static void init()
 	{
@@ -20,9 +22,11 @@ public class ItemRepo
 		canvas = new ItemCanvas();
 		bag = new ItemBag();
 		novasteel = new ItemNovasteel();
-		novasteelHelm = new ItemNovasteelArmor(ArmorType.HELM);
-		novasteelChest = new ItemNovasteelArmor(ArmorType.CHEST);
-		novasteelLegs = new ItemNovasteelArmor(ArmorType.LEGS);
-		novasteelBoots = new ItemNovasteelArmor(ArmorType.BOOTS);
+		novasteelHelm = new ItemNovasteelArmor(ArmorType.HELM, false);
+		novasteelHelmRevealing = new ItemNovasteelArmor(ArmorType.HELM, true);
+		novasteelChest = new ItemNovasteelArmor(ArmorType.CHEST, false);
+		novasteelLegs = new ItemNovasteelArmor(ArmorType.LEGS, false);
+		novasteelBoots = new ItemNovasteelArmor(ArmorType.BOOTS, false);
+		terraGaia = new ItemTerraGaia();
 	}
 }

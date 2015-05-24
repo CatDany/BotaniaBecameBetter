@@ -6,6 +6,7 @@ import org.apache.logging.log4j.Logger;
 
 import catdany.bbb.blocks.BlockRepo;
 import catdany.bbb.command.CommandSlimeChunk;
+import catdany.bbb.event.EntityEvents;
 import catdany.bbb.event.WorldEvents;
 import catdany.bbb.gui.GuiHandler;
 import catdany.bbb.items.ItemRepo;
@@ -44,6 +45,7 @@ public class BBB
 	{
 		log = e.getModLog();
 		Log.debug("Logger is initialized successfully.");
+		proxy.preInit();
 		BBBCfg.initConfiguration(e);
 		BBBCfg.updateConfig();
 	}
@@ -51,6 +53,7 @@ public class BBB
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent e)
 	{
+		proxy.init();
 		modTab = new CreativeTabBBB();
 		BlockRepo.init();
 		ItemRepo.init();
@@ -59,12 +62,13 @@ public class BBB
 		
 		NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
 		EventBusHelper.checkBusAndRegister(new WorldEvents());
+		EventBusHelper.checkBusAndRegister(new EntityEvents());
 	}
 	
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent e)
 	{
-		//
+		proxy.postInit();
 	}
 	
 	@Mod.EventHandler

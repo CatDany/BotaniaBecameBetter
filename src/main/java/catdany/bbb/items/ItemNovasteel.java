@@ -35,7 +35,4 @@ public class ItemNovasteel extends Item
 	{
 		return true;
 	}
-	
-	@Override
-	public void getSubItems(Item item, CreativeTabs tabs, List list) {}
 }

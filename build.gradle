@@ -44,6 +44,7 @@ dependencies {
     
     compile files('src/apis/Baubles-deobf-1.7.10-1.0.1.10.jar')
     compile files('src/apis/Botania r1.6-183-deobf.jar')
+    compile files('src/apis/Thaumcraft-deobf-1.7.10-4.2.3.5.jar')
 }
 
 processResources

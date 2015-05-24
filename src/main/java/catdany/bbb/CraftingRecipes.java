@@ -6,6 +6,8 @@ import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.ShapedRecipes;
 import net.minecraft.item.crafting.ShapelessRecipes;
+import thaumcraft.api.ThaumcraftApi;
+import thaumcraft.api.ThaumcraftApiHelper;
 import vazkii.botania.api.BotaniaAPI;
 import vazkii.botania.api.recipe.RecipePetals;
 import vazkii.botania.common.block.ModBlocks;
@@ -22,9 +24,11 @@ public class CraftingRecipes
 	public static ShapelessRecipes recipeCanvas;
 	public static ShapedRecipes recipeBag;
 	public static ShapedRecipes recipeNovasteelHelm;
+	public static ShapelessRecipes recipeNovasteelHelmRevealing;
 	public static ShapedRecipes recipeNovasteelChest;
 	public static ShapedRecipes recipeNovasteelLegs;
 	public static ShapedRecipes recipeNovasteelBoots;
+	public static ShapelessRecipes recipeTerraGaia;
 	
 	public static void init()
 	{
@@ -80,6 +84,13 @@ public class CraftingRecipes
 					new ItemStack(ItemRepo.novasteelHelm)
 				);
 		GameRegistry.addRecipe(recipeNovasteelHelm);
+		// Novasteel Helm of Revealing
+		recipeNovasteelHelmRevealing = new ShapelessRecipes(
+				new ItemStack(ItemRepo.novasteelHelmRevealing), Arrays.asList(
+				new ItemStack(ItemRepo.novasteelHelm),
+				new ItemStack(GameRegistry.findItem("Thaumcraft", "ItemGoggles")))
+			);
+		GameRegistry.addRecipe(recipeNovasteelHelmRevealing);
 		// Novasteel Chestplate
 		recipeNovasteelChest = new ShapedRecipes(3, 3,
 				new ItemStack[] {
@@ -106,5 +117,12 @@ public class CraftingRecipes
 				new ItemStack(ItemRepo.novasteelBoots)
 			);
 		GameRegistry.addRecipe(recipeNovasteelBoots);
+		// Infused with Nether Star Piece of Terra-Gaia Matter
+		recipeTerraGaia = new ShapelessRecipes(
+				new ItemStack(ItemRepo.terraGaia), Arrays.asList(
+				new ItemStack(ModItems.manaResource, 1, 14),
+				new ItemStack(Items.nether_star))
+			);
+		GameRegistry.addRecipe(recipeTerraGaia);
 	}
 }

@@ -7,9 +7,11 @@ item.BotaniaBecameBetter:Canvas.name=Mana Infused Canvas
 item.BotaniaBecameBetter:Bag.name=Mana Canvas Bag
 item.BotaniaBecameBetter:Novasteel.name=Novasteel
 item.BotaniaBecameBetter:NovasteelHelm.name=Novasteel Helm
+item.BotaniaBecameBetter:NovasteelHelmRevealing.name=Novasteel Helm of Revealing
 item.BotaniaBecameBetter:NovasteelChest.name=Novasteel Chestplate
 item.BotaniaBecameBetter:NovasteelLegs.name=Novasteel Leggings
 item.BotaniaBecameBetter:NovasteelBoots.name=Novasteel Boots
+item.BotaniaBecameBetter:TerraGaia.name=§5§oInfused with Nether Star Piece of Terra-Gaia Matter
 
 bbb.tablet.empty=This tablet is empty.
 bbb.tablet.almostEmpty=This tablet is almost empty.
@@ -20,6 +22,10 @@ bbb.tablet.less60=This tablet is less than three quarters full.
 bbb.tablet.less90=This tablet is more than three quarters full.
 bbb.tablet.almostFull=This tablet is almost full.
 bbb.tablet.full=This tablet is full.
+
+bbb.novasteel.armorSetEffect=Blessing of Nova
+bbb.novasteel.manaDiscount=0% less Mana cost on Mana Tools
+bbb.novasteel.invulnerability=All damage is ignored except lava
 
 botania.category.bbb=BotaniaBecameBetter Mod
 
