@@ -1,3 +1,8 @@
+1.7.10-ALPHA-0.1-6
+- Added craft to Novasteel, not described in Lexicon yet
+- Added functionality to Novasteel armor
+- Added a little easter egg...
+
 1.7.10-ALPHA-0.1.5
 - Added a config option to disable Elven Mana Tablet (now disabled by default)
 - Fixed derp: config option that was meant to allow people to disable Unactivated Mana Mob Spawners wasn't working. Now it's renamed, so it's brand new.
