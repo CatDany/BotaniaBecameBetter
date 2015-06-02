@@ -11,6 +11,9 @@ public class ProxyServer implements IProxy
 	public void init() {}
 	
 	@Override
+	public void initEventHandlers() {}
+	
+	@Override
 	public void postInit() {}
 	
 	@Override

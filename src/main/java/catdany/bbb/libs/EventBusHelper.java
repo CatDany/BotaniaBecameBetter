@@ -3,14 +3,16 @@ package catdany.bbb.libs;
 import java.lang.reflect.Method;
 
 import net.minecraftforge.common.MinecraftForge;
+import catdany.bbb.BBB;
+import catdany.bbb.Log;
 import cpw.mods.fml.common.FMLCommonHandler;
-import cpw.mods.fml.common.FMLLog;
 import cpw.mods.fml.relauncher.Side;
 
 public class EventBusHelper
 {
 	public static void register(Object eventHandler, EventBusType type)
 	{
+		Log.debug("Registering event handler %s of type %s on side %s", eventHandler.getClass().getName(), type, BBB.proxy.getSide());
 		switch (type)
 		{
 		case FORGE:
@@ -61,10 +63,9 @@ public class EventBusHelper
 	
 	public static void checkBusAndRegister(Object eventHandler, Side side)
 	{
-		if (FMLCommonHandler.instance().getSide() != side)
+		if (FMLCommonHandler.instance().getSide().isClient() == side.isClient())
 			return;
-		EventBusType type = checkBus(eventHandler);
-		register(eventHandler, type);
+		checkBusAndRegister(eventHandler);
 	}
 	
 	public enum EventBusType

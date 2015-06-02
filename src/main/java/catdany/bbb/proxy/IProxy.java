@@ -8,6 +8,8 @@ public interface IProxy
 	
 	public void init();
 	
+	public void initEventHandlers();
+	
 	public void postInit();
 	
 	public Side getSide();

@@ -63,6 +63,7 @@ public class BBB
 		NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
 		EventBusHelper.checkBusAndRegister(new WorldEvents());
 		EventBusHelper.checkBusAndRegister(new EntityEvents());
+		proxy.initEventHandlers();
 	}
 	
 	@Mod.EventHandler
