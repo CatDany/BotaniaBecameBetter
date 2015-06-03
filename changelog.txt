@@ -1,3 +1,6 @@
+1.7.10-ALPHA-0.1-8
+- Fixed derps with rendering particles for CatDany (myself)
+
 1.7.10-ALPHA-0.1-7
 - Fancy rendering particles for CatDany (myself) \o/
 
