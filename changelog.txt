@@ -1,3 +1,6 @@
+1.7.10-ALPHA-0.1-7
+- Fancy rendering particles for CatDany (myself) \o/
+
 1.7.10-ALPHA-0.1-6
 - Added craft to Novasteel, not described in Lexicon yet
 - Added functionality to Novasteel armor
