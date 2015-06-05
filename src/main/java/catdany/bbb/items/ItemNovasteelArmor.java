@@ -190,4 +190,16 @@ public class ItemNovasteelArmor extends ItemArmor implements IGoggles, IRevealer
 		else
 			return MODEL_0;
 	}
+	
+	public static boolean isFullNovasteel(EntityLivingBase living)
+	{
+		for (int i = 1; i <= 4; i++)
+		{
+			if (living.getEquipmentInSlot(i) == null || !(living.getEquipmentInSlot(i).getItem() instanceof ItemNovasteelArmor))
+			{
+				return false;
+			}
+		}
+		return true;
+	}
 }

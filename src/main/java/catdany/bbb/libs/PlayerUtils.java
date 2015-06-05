@@ -156,6 +156,11 @@ public class PlayerUtils
         return world.func_147447_a(vec3, vec31, countFluids, !countFluids, false);
 	}
 	
+	public static boolean isLocalPlayer(EntityPlayer player)
+	{
+		return Minecraft.getMinecraft().thePlayer.getCommandSenderName().equals(player.getCommandSenderName());
+	}
+	
 	class Coords
 	{
 		public World world;

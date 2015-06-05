@@ -17,7 +17,7 @@ public class EntityEvents
 	@SubscribeEvent
 	public void livingDamage(LivingHurtEvent e)
 	{
-		if (isFullNovasteel(e.entityLiving) && e.source != DamageSource.lava)
+		if (ItemNovasteelArmor.isFullNovasteel(e.entityLiving) && e.source != DamageSource.lava)
 		{
 			damageArmor(e);
 			e.ammount = 0F;
@@ -27,18 +27,6 @@ public class EntityEvents
 		{
 			e.ammount = 50F;
 		}
-	}
-	
-	private boolean isFullNovasteel(EntityLivingBase living)
-	{
-		for (int i = 1; i <= 4; i++)
-		{
-			if (living.getEquipmentInSlot(i) == null || !(living.getEquipmentInSlot(i).getItem() instanceof ItemNovasteelArmor))
-			{
-				return false;
-			}
-		}
-		return true;
 	}
 	
 	private void damageArmor(LivingHurtEvent e)
