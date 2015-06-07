@@ -1,3 +1,7 @@
+1.7.10-ALPHA-0.1-9
+- Added 'Novasteel rendering particles awesomeness'
+- Terra Blade is now firing special colored bursts if you are me \o/
+
 1.7.10-ALPHA-0.1-8
 - Fixed derps with rendering particles for CatDany (myself)
 
