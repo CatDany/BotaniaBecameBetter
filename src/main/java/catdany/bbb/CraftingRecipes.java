@@ -7,13 +7,11 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.ContainerPlayer;
-import net.minecraft.inventory.ContainerWorkbench;
 import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.inventory.SlotCrafting;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.ShapedRecipes;
 import net.minecraft.item.crafting.ShapelessRecipes;
-import net.minecraftforge.oredict.RecipeSorter;
 import vazkii.botania.api.BotaniaAPI;
 import vazkii.botania.api.recipe.RecipePetals;
 import vazkii.botania.common.block.ModBlocks;
@@ -21,9 +19,6 @@ import vazkii.botania.common.item.ModItems;
 import catdany.bbb.blocks.BlockRepo;
 import catdany.bbb.crafting.RecipeSpecialTerraSword;
 import catdany.bbb.items.ItemRepo;
-
-import com.google.common.base.Throwables;
-
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.ReflectionHelper;
 
@@ -141,9 +136,9 @@ public class CraftingRecipes
 		GameRegistry.addRecipe(recipeSpecialTerraSword);
 	}
 	
-	private static final Field eventHandlerField = ReflectionHelper.findField(InventoryCrafting.class, "eventHandler");
-	private static final Field containerPlayerPlayerField = ReflectionHelper.findField(ContainerPlayer.class, "thePlayer");
-	private static final Field slotCraftingPlayerField = ReflectionHelper.findField(SlotCrafting.class, "thePlayer");
+	private static final Field eventHandlerField = ReflectionHelper.findField(InventoryCrafting.class, BBBCfg.deobfReflect ? "eventHandler" : "field_70465_c");
+	private static final Field containerPlayerPlayerField = ReflectionHelper.findField(ContainerPlayer.class, BBBCfg.deobfReflect ? "thePlayer" : "field_82862_h");
+	private static final Field slotCraftingPlayerField = ReflectionHelper.findField(SlotCrafting.class, BBBCfg.deobfReflect ? "thePlayer": "field_75238_b");
 	
 	public static EntityPlayer getCraftingPlayer(InventoryCrafting craft)
 	{
