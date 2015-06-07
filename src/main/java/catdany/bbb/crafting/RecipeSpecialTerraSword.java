@@ -7,7 +7,6 @@ import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.world.World;
 import vazkii.botania.common.item.ModItems;
 import catdany.bbb.CraftingRecipes;
-import catdany.bbb.Log;
 import catdany.bbb.Refs;
 import catdany.bbb.items.ItemRepo;
 

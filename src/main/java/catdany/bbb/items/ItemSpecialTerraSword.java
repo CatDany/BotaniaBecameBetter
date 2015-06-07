@@ -3,17 +3,13 @@ package catdany.bbb.items;
 import java.util.List;
 
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.IIcon;
-import net.minecraft.world.World;
 import vazkii.botania.common.entity.EntityManaBurst;
 import vazkii.botania.common.item.ModItems;
-import vazkii.botania.common.item.equipment.tool.ItemTerraSword;
+import vazkii.botania.common.item.equipment.tool.terrasteel.ItemTerraSword;
 import catdany.bbb.Refs;
-import cpw.mods.fml.common.registry.GameRegistry;
 
 public class ItemSpecialTerraSword extends ItemTerraSword
 {
