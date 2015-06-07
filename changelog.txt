@@ -1,3 +1,6 @@
+1.7.10-ALPHA-0.1-11
+- Fixed reflect crashes in non-dev environment
+
 1.7.10-ALPHA-0.1-10
 - Updated Botania API to r1.6-191
 - Fixed NoClassDefFoundError with newer versions of Botania
