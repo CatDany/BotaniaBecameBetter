@@ -15,6 +15,7 @@ public class ItemRepo
 	public static ItemNovasteelArmor novasteelLegs;
 	public static ItemNovasteelArmor novasteelBoots;
 	public static ItemTerraGaia terraGaia;
+	public static ItemSpecialTerraSword specialTerraSword;
 	
 	public static void init()
 	{
@@ -28,5 +29,6 @@ public class ItemRepo
 		novasteelLegs = new ItemNovasteelArmor(ArmorType.LEGS, false);
 		novasteelBoots = new ItemNovasteelArmor(ArmorType.BOOTS, false);
 		terraGaia = new ItemTerraGaia();
+		specialTerraSword = new ItemSpecialTerraSword();
 	}
 }

@@ -1,20 +1,31 @@
 package catdany.bbb;
 
+import java.lang.reflect.Field;
 import java.util.Arrays;
 
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
+import net.minecraft.inventory.Container;
+import net.minecraft.inventory.ContainerPlayer;
+import net.minecraft.inventory.ContainerWorkbench;
+import net.minecraft.inventory.InventoryCrafting;
+import net.minecraft.inventory.SlotCrafting;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.ShapedRecipes;
 import net.minecraft.item.crafting.ShapelessRecipes;
-import thaumcraft.api.ThaumcraftApi;
-import thaumcraft.api.ThaumcraftApiHelper;
+import net.minecraftforge.oredict.RecipeSorter;
 import vazkii.botania.api.BotaniaAPI;
 import vazkii.botania.api.recipe.RecipePetals;
 import vazkii.botania.common.block.ModBlocks;
 import vazkii.botania.common.item.ModItems;
 import catdany.bbb.blocks.BlockRepo;
+import catdany.bbb.crafting.RecipeSpecialTerraSword;
 import catdany.bbb.items.ItemRepo;
+
+import com.google.common.base.Throwables;
+
 import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.relauncher.ReflectionHelper;
 
 public class CraftingRecipes
 {
@@ -29,6 +40,7 @@ public class CraftingRecipes
 	public static ShapedRecipes recipeNovasteelLegs;
 	public static ShapedRecipes recipeNovasteelBoots;
 	public static ShapelessRecipes recipeTerraGaia;
+	public static RecipeSpecialTerraSword recipeSpecialTerraSword;
 	
 	public static void init()
 	{
@@ -124,5 +136,29 @@ public class CraftingRecipes
 				new ItemStack(Items.nether_star))
 			);
 		GameRegistry.addRecipe(recipeTerraGaia);
+		// SpecialTerraSword
+		recipeSpecialTerraSword = new RecipeSpecialTerraSword();
+		GameRegistry.addRecipe(recipeSpecialTerraSword);
+	}
+	
+	private static final Field eventHandlerField = ReflectionHelper.findField(InventoryCrafting.class, "eventHandler");
+	private static final Field containerPlayerPlayerField = ReflectionHelper.findField(ContainerPlayer.class, "thePlayer");
+	private static final Field slotCraftingPlayerField = ReflectionHelper.findField(SlotCrafting.class, "thePlayer");
+	
+	public static EntityPlayer getCraftingPlayer(InventoryCrafting craft)
+	{
+		try
+		{
+			Container container = (Container)eventHandlerField.get(craft);
+			if (container instanceof ContainerPlayer)
+			{
+				return (EntityPlayer)containerPlayerPlayerField.get(container);
+			}
+		}
+		catch (Throwable t)
+		{
+			Log.printStackTrace(t, false);
+		}
+		return null;
 	}
 }
