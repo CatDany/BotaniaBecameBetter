@@ -30,6 +30,7 @@ import cpw.mods.fml.common.network.NetworkRegistry;
 	dependencies = Refs.DEPENDENCIES,
 	acceptedMinecraftVersions = Refs.MCVERSION
 )
+//TODO: [Suggestion] Add Dice of Fate rebinding
 public class BBB
 {
 	@Mod.Instance

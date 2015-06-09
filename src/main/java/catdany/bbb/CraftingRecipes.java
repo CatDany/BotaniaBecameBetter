@@ -36,6 +36,7 @@ public class CraftingRecipes
 	public static ShapedRecipes recipeNovasteelBoots;
 	public static ShapelessRecipes recipeTerraGaia;
 	public static RecipeSpecialTerraSword recipeSpecialTerraSword;
+	public static ShapedRecipes recipeHolyRing;
 	
 	public static void init()
 	{
@@ -134,6 +135,15 @@ public class CraftingRecipes
 		// SpecialTerraSword
 		recipeSpecialTerraSword = new RecipeSpecialTerraSword();
 		GameRegistry.addRecipe(recipeSpecialTerraSword);
+		// Holy Ring
+		recipeHolyRing = new ShapedRecipes(3, 3,
+				new ItemStack[] {
+				new ItemStack(ModItems.rune, 1, 15), new ItemStack(ModItems.manaResource, 1, 7), new ItemStack(ModItems.rune, 1, 3),
+				new ItemStack(ModItems.manaResource, 1, 7), null, new ItemStack(ModItems.manaResource, 1, 7),
+				new ItemStack(ModItems.rune, 1, 0), new ItemStack(ModItems.manaResource, 1, 7), null},
+				new ItemStack(ItemRepo.holyRing)
+			);
+		GameRegistry.addRecipe(recipeHolyRing);
 	}
 	
 	private static final Field eventHandlerField = ReflectionHelper.findField(InventoryCrafting.class, BBBCfg.deobfReflect ? "eventHandler" : "field_70465_c");

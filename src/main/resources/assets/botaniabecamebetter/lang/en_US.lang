@@ -12,6 +12,7 @@ item.BotaniaBecameBetter:NovasteelChest.name=Novasteel Chestplate
 item.BotaniaBecameBetter:NovasteelLegs.name=Novasteel Leggings
 item.BotaniaBecameBetter:NovasteelBoots.name=Novasteel Boots
 item.BotaniaBecameBetter:TerraGaia.name=§5§oInfused with Nether Star Piece of Terra-Gaia Matter
+item.BotaniaBecameBetter:HolyRing.name=Holy Ring
 
 bbb.tablet.empty=This tablet is empty.
 bbb.tablet.almostEmpty=This tablet is almost empty.
@@ -56,3 +57,7 @@ botania.page.Novasteel1=
 botania.page.Novasteel2=
 botania.page.Novasteel3=
 botania.page.Novasteel4=
+
+botania.entry.HolyRing=Holy Ring
+botania.page.HolyRing0=Since olden times &4Elves&0 tend to make meaningful things that help them fight in their lives.<br>For some, this is just a ring, but for those who are faithful, magical forces never refuse to assist.<br>A ring, just as simple as this one, will protect you from &4Wither&0 effects with its sanctity, but will indeed cost you some amount of &4Mana&0.
+botania.page.HolyRing1=&oMolly Band.&r
