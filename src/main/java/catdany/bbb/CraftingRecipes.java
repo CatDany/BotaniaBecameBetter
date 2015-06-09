@@ -17,6 +17,7 @@ import vazkii.botania.api.recipe.RecipePetals;
 import vazkii.botania.common.block.ModBlocks;
 import vazkii.botania.common.item.ModItems;
 import catdany.bbb.blocks.BlockRepo;
+import catdany.bbb.crafting.RecipeDiceRebind;
 import catdany.bbb.crafting.RecipeSpecialTerraSword;
 import catdany.bbb.items.ItemRepo;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -37,6 +38,7 @@ public class CraftingRecipes
 	public static ShapelessRecipes recipeTerraGaia;
 	public static RecipeSpecialTerraSword recipeSpecialTerraSword;
 	public static ShapedRecipes recipeHolyRing;
+	public static RecipeDiceRebind recipeDiceRebind;
 	
 	public static void init()
 	{
@@ -144,6 +146,9 @@ public class CraftingRecipes
 				new ItemStack(ItemRepo.holyRing)
 			);
 		GameRegistry.addRecipe(recipeHolyRing);
+		// Dice Rebind
+		recipeDiceRebind = new RecipeDiceRebind();
+		GameRegistry.addRecipe(recipeDiceRebind);
 	}
 	
 	private static final Field eventHandlerField = ReflectionHelper.findField(InventoryCrafting.class, BBBCfg.deobfReflect ? "eventHandler" : "field_70465_c");

@@ -63,3 +63,8 @@ botania.page.Novasteel4=
 botania.entry.HolyRing=Holy Ring
 botania.page.HolyRing0=Since olden times &4Elves&0 tend to make meaningful things that help them fight in their lives.<br>For some, this is just a ring, but for those who are faithful, magical forces never refuse to assist.<br>A ring, just as simple as this one, will protect you from &4Wither&0 effects with its sanctity, but will indeed cost you some amount of &4Mana&0.
 botania.page.HolyRing1=&oMolly Band.&r
+
+botania.entry.DiceRebind=Relic Rebinding
+botania.page.DiceRebind0=After you slay the &4Gaia Guardian&0, you're rewarded with a &1Dice of Fate&0 that's being bound directly to your soul and no-one else can ever use it. Ever.<br>No, I lied. You can rebind &1Dice of Fate&0 by combining it with a &1Name Tag&0. But do keep in mind that it's bad a-a-and... you can corrupt your soul!... accidentally! ... !!!
+botania.page.DiceRebind1=There are some rules to this ritual. &1Name Tag&0 must have a name of a person, that you want to rebind the &1Dice&0 to, written on it. Rebinding ritual must be performed by a person who owns the &1Dice&0. And lastly, rebinding ritual must be performed in this person's personal crafting grid.
+botania.page.DiceRebind2=
