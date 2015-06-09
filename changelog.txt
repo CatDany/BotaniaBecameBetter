@@ -1,3 +1,8 @@
+1.7.10-ALPHA-0.1-12
+- Added Holy Ring (anti-wither bauble)
+- Added Dice of Fate rebinding
+- Fixed Mana Canvas Bag container localization (I should have fixed this in build 4)
+
 1.7.10-ALPHA-0.1-11
 - Fixed reflect crashes in non-dev environment
 
