@@ -24,6 +24,8 @@ bbb.tablet.less90=This tablet is more than three quarters full.
 bbb.tablet.almostFull=This tablet is almost full.
 bbb.tablet.full=This tablet is full.
 
+bbb.container.bag=Mana Canvas Bag
+
 bbb.novasteel.armorSetEffect=Blessing of Nova
 bbb.novasteel.manaDiscount=0% less Mana cost on Mana Tools
 bbb.novasteel.invulnerability=All damage is ignored except lava
