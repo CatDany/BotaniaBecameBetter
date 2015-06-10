@@ -2,6 +2,7 @@ Coder/Maintainer - CatDany [@Dany2001RU]
 
 Thanks to:
 - Lizbeth Vazkii Rika [@Vazkii] for making Botania and its awesome API
+- All internal testers, mainly the Hoppix Team for playtesting
 - MineMaarten [@MineMaarten] for making awesome 'Bag dupe fix' code in BluePower, so I could borrow it XD
 - Eloraam [@TheRealEloraam] for Bag texture (well, it's not original, but still)
 - GrekNaf [@MrNafanke] for suggesting Elven Mana Tablet
