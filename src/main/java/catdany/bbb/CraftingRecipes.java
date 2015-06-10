@@ -172,9 +172,9 @@ public class CraftingRecipes
 		GameRegistry.addRecipe(recipeGaiaShardBoots);
 	}
 	
-	private static final Field eventHandlerField = ReflectionHelper.findField(InventoryCrafting.class, BBBCfg.deobfReflect ? "eventHandler" : "field_70465_c");
-	private static final Field containerPlayerPlayerField = ReflectionHelper.findField(ContainerPlayer.class, BBBCfg.deobfReflect ? "thePlayer" : "field_82862_h");
-	private static final Field slotCraftingPlayerField = ReflectionHelper.findField(SlotCrafting.class, BBBCfg.deobfReflect ? "thePlayer": "field_75238_b");
+	private static final Field eventHandlerField = ReflectionHelper.findField(InventoryCrafting.class, "eventHandler", "field_70465_c");
+	private static final Field containerPlayerPlayerField = ReflectionHelper.findField(ContainerPlayer.class, "thePlayer", "field_82862_h");
+	private static final Field slotCraftingPlayerField = ReflectionHelper.findField(SlotCrafting.class, "thePlayer", "field_75238_b");
 	
 	public static EntityPlayer getCraftingPlayer(InventoryCrafting craft)
 	{

@@ -689,16 +689,16 @@ public class EntityGaia extends EntityDoppleganger
 	
 	private int jumpTicks()
 	{
-		return ReflectionHelper.getPrivateValue(EntityLivingBase.class, this, "jumpTicks");
+		return ReflectionHelper.getPrivateValue(EntityLivingBase.class, this, "jumpTicks", "field_70773_bE");
 	}
 	
 	private void setJumpTicks(int jumpTicks)
 	{
-		ReflectionHelper.setPrivateValue(EntityLivingBase.class, this, jumpTicks, "jumpTicks");
+		ReflectionHelper.setPrivateValue(EntityLivingBase.class, this, jumpTicks, "jumpTicks", "field_70773_bE");
 	}
 	
 	private void setPersistenceRequired(boolean persistenceRequired)
 	{
-		ReflectionHelper.setPrivateValue(EntityLiving.class, this, persistenceRequired, "persistenceRequired");
+		ReflectionHelper.setPrivateValue(EntityLiving.class, this, persistenceRequired, "persistenceRequired", "field_82179_bU");
 	}
 }
