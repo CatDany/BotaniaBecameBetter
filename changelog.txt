@@ -1,6 +1,10 @@
 Known Bugs:
 - When sharing entries, it shows wrong unlocalized name in chat (e.g. botania.entry.botania.entry.MYENTRYNAME)
 
+1.7.10-ALPHA-0.1-14
+- Added "Another Gaia Ritual"
+- Config option 'deobfReflect' is now deprecated. ReflectionHelper will automatically find correct fields/methods (in theory)
+
 1.7.10-ALPHA-0.1-13
 - Added fancier crafting for Novasteel, also there's a Lexica Botania entry for that too
 
