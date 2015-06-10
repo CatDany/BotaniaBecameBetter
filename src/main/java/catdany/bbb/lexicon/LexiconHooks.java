@@ -20,6 +20,7 @@ public class LexiconHooks
 	public static LexiconNovasteel entryNovasteel;
 	public static LexiconHolyRing entryHolyRing;
 	public static LexiconDiceRebind entryDiceRebind;
+	public static LexiconGaia entryGaia;
 	
 	public static void init()
 	{
@@ -41,6 +42,8 @@ public class LexiconHooks
 		addEntry(entryHolyRing, null);
 		entryDiceRebind = new LexiconDiceRebind();
 		addEntry(entryDiceRebind, null);
+		entryGaia = new LexiconGaia();
+		addEntry(entryGaia, null);
 	}
 	
 	private static void addEntry(LexiconEntry entry, String configOption)

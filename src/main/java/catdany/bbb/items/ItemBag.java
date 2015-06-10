@@ -4,15 +4,12 @@ import java.util.List;
 
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Items;
-import net.minecraft.inventory.ContainerPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.world.World;
 import catdany.bbb.BBB;
-import catdany.bbb.Log;
 import catdany.bbb.Refs;
 import catdany.bbb.gui.ContainerBag;
 import catdany.bbb.gui.GuiHandler;

@@ -13,6 +13,9 @@ item.BotaniaBecameBetter:NovasteelLegs.name=Novasteel Leggings
 item.BotaniaBecameBetter:NovasteelBoots.name=Novasteel Boots
 item.BotaniaBecameBetter:TerraGaia.name=§5§oInfused with Nether Star Piece of Terra-Gaia Matter
 item.BotaniaBecameBetter:HolyRing.name=Holy Ring
+item.BotaniaBecameBetter:GaiaShard.name=Gaia Shard
+
+entity.BotaniaBecameBetter.GaiaExtended.name=Guardian of Gaia
 
 bbb.tablet.empty=This tablet is empty.
 bbb.tablet.almostEmpty=This tablet is almost empty.
@@ -29,6 +32,14 @@ bbb.container.bag=Mana Canvas Bag
 bbb.novasteel.armorSetEffect=Blessing of Nova
 bbb.novasteel.manaDiscount=0% less Mana cost on Mana Tools
 bbb.novasteel.invulnerability=All damage is ignored except lava
+
+bbb.gaiaShard.0=Apply to §eNovasteel§r armor piece.
+bbb.gaiaShard.1=When applied, this armor piece will not use any §bMana§r.
+bbb.gaiaShard.applied=Does not use any §bMana§r
+
+bbb.gaia.regen=The Guardian of Gaia seems to draw strength from the water around you.
+
+death.attack.bbb.damage.gaia_no_novasteel=%s was completely demolished by Gaia because he didn't prepare properly.
 
 botania.category.bbb=BotaniaBecameBetter Mod
 
@@ -70,3 +81,6 @@ botania.entry.DiceRebind=Relic Rebinding
 botania.page.DiceRebind0=After you slay the &4Gaia Guardian&0, you're rewarded with a &1Dice of Fate&0 that's being bound directly to your soul and no-one else can ever use it. Ever.<br>No, I lied. You can rebind &1Dice of Fate&0 by combining it with a &1Name Tag&0. But do keep in mind that it's bad a-a-and... you can corrupt your soul!... accidentally! ... !!!
 botania.page.DiceRebind1=There are some rules to this ritual. &1Name Tag&0 must have a name of a person, that you want to rebind the &1Dice&0 to, written on it. Rebinding ritual must be performed by a person who owns the &1Dice&0. And lastly, rebinding ritual must be performed in this person's personal crafting grid.
 botania.page.DiceRebind2=
+
+botania.entry.Gaia=Another Gaia Ritual
+botania.page.Gaia0=Gaia learned all the weaknesses of her previous &4Guardians&0 and created a new and very powerful one.<br>It can be summoned by using &1Novasteel&0 on a &1Beacon&0 surrounded by catalyst pylons.<br>Prepare really carefully, bring your &1Novasteel&0 armor set and except anything... 

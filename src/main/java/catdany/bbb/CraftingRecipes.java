@@ -18,6 +18,7 @@ import vazkii.botania.common.block.ModBlocks;
 import vazkii.botania.common.item.ModItems;
 import catdany.bbb.blocks.BlockRepo;
 import catdany.bbb.crafting.RecipeDiceRebind;
+import catdany.bbb.crafting.RecipeGaiaShard;
 import catdany.bbb.crafting.RecipeSpecialTerraSword;
 import catdany.bbb.items.ItemRepo;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -39,6 +40,11 @@ public class CraftingRecipes
 	public static RecipeSpecialTerraSword recipeSpecialTerraSword;
 	public static ShapedRecipes recipeHolyRing;
 	public static RecipeDiceRebind recipeDiceRebind;
+	public static RecipeGaiaShard recipeGaiaShardHelm;
+	public static RecipeGaiaShard recipeGaiaShardHelmRevealing;
+	public static RecipeGaiaShard recipeGaiaShardChest;
+	public static RecipeGaiaShard recipeGaiaShardLegs;
+	public static RecipeGaiaShard recipeGaiaShardBoots;
 	
 	public static void init()
 	{
@@ -149,6 +155,21 @@ public class CraftingRecipes
 		// Dice Rebind
 		recipeDiceRebind = new RecipeDiceRebind();
 		GameRegistry.addRecipe(recipeDiceRebind);
+		// Gaia Shard: Helm
+		recipeGaiaShardHelm = new RecipeGaiaShard(ItemRepo.novasteelHelm);
+		GameRegistry.addRecipe(recipeGaiaShardHelm);
+		// Gaia Shard: Helm of Revealing
+		recipeGaiaShardHelmRevealing = new RecipeGaiaShard(ItemRepo.novasteelHelmRevealing);
+		GameRegistry.addRecipe(recipeGaiaShardHelmRevealing);
+		// Gaia Shard: Chestplate
+		recipeGaiaShardChest = new RecipeGaiaShard(ItemRepo.novasteelChest);
+		GameRegistry.addRecipe(recipeGaiaShardChest);
+		// Gaia Shard: Leggings
+		recipeGaiaShardLegs = new RecipeGaiaShard(ItemRepo.novasteelLegs);
+		GameRegistry.addRecipe(recipeGaiaShardLegs);
+		// Gaia Shard: Boots
+		recipeGaiaShardBoots = new RecipeGaiaShard(ItemRepo.novasteelBoots);
+		GameRegistry.addRecipe(recipeGaiaShardBoots);
 	}
 	
 	private static final Field eventHandlerField = ReflectionHelper.findField(InventoryCrafting.class, BBBCfg.deobfReflect ? "eventHandler" : "field_70465_c");

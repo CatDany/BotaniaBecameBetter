@@ -17,6 +17,7 @@ public class ItemRepo
 	public static ItemTerraGaia terraGaia;
 	public static ItemSpecialTerraSword specialTerraSword;
 	public static ItemHolyRing holyRing;
+	public static ItemGaiaShard gaiaShard;
 	
 	public static void init()
 	{
@@ -32,5 +33,6 @@ public class ItemRepo
 		terraGaia = new ItemTerraGaia();
 		specialTerraSword = new ItemSpecialTerraSword();
 		holyRing = new ItemHolyRing();
+		gaiaShard = new ItemGaiaShard();
 	}
 }

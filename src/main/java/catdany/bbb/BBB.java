@@ -6,6 +6,7 @@ import org.apache.logging.log4j.Logger;
 
 import catdany.bbb.blocks.BlockRepo;
 import catdany.bbb.command.CommandSlimeChunk;
+import catdany.bbb.entity.EntityRepo;
 import catdany.bbb.event.EntityEvents;
 import catdany.bbb.event.WorldEvents;
 import catdany.bbb.gui.GuiHandler;
@@ -58,6 +59,7 @@ public class BBB
 		modTab = new CreativeTabBBB();
 		BlockRepo.init();
 		ItemRepo.init();
+		EntityRepo.initEntities();
 		CraftingRecipes.init();
 		LexiconHooks.init();
 		

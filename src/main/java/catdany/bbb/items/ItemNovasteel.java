@@ -4,10 +4,13 @@ import java.util.List;
 
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
 import catdany.bbb.BBB;
 import catdany.bbb.Refs;
+import catdany.bbb.entity.EntityGaia;
 import catdany.bbb.libs.IconRegHelper;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -28,6 +31,13 @@ public class ItemNovasteel extends Item
 	public void registerIcons(IIconRegister reg)
 	{
 		itemIcon = IconRegHelper.regItem(this, reg);
+	}
+	
+	@Override
+	public boolean onItemUse(ItemStack stack, EntityPlayer player, World world, int x, int y, int z, int side, float hitX, float hitY, float hitZ)
+	{
+		EntityGaia.spawn(player, stack, world, x, y, z);
+		return true;
 	}
 	
 	@Override

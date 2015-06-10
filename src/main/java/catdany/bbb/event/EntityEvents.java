@@ -7,9 +7,10 @@ import net.minecraft.util.DamageSource;
 import net.minecraftforge.common.ISpecialArmor;
 import net.minecraftforge.common.ISpecialArmor.ArmorProperties;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
+import catdany.bbb.Log;
 import catdany.bbb.Refs;
+import catdany.bbb.entity.EntityGaia;
 import catdany.bbb.items.ItemNovasteelArmor;
-import catdany.bbb.libs.PlayerUtils;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 
 public class EntityEvents
@@ -17,8 +18,11 @@ public class EntityEvents
 	@SubscribeEvent
 	public void livingDamage(LivingHurtEvent e)
 	{
-		if (ItemNovasteelArmor.isFullNovasteel(e.entityLiving) && e.source != DamageSource.lava)
+		if (ItemNovasteelArmor.isFullNovasteel(e.entityLiving)
+				&& e.source != DamageSource.lava
+				&& !(e.source.getEntity() instanceof EntityGaia))
 		{
+			Log.debug("wot > %s", e.source.damageType);
 			damageArmor(e);
 			e.ammount = 0F;
 		}

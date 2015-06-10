@@ -1,9 +1,10 @@
 package catdany.bbb.proxy;
 
-import catdany.bbb.Log;
+import catdany.bbb.entity.EntityGaia;
 import catdany.bbb.event.RenderEvents;
 import catdany.bbb.items.ItemNovasteelArmor;
 import catdany.bbb.libs.EventBusHelper;
+import catdany.bbb.render.RenderGaia;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.relauncher.Side;
 
@@ -16,6 +17,7 @@ public class ProxyClient implements IProxy
 	public void init()
 	{
 		ItemNovasteelArmor.RENDER_ID = RenderingRegistry.addNewArmourRendererPrefix("novasteel");
+		RenderingRegistry.registerEntityRenderingHandler(EntityGaia.class, new RenderGaia());
 	}
 	
 	@Override

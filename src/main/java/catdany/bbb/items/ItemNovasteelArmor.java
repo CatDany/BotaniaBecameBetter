@@ -8,6 +8,7 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
@@ -83,18 +84,17 @@ public class ItemNovasteelArmor extends ItemArmor implements IGoggles, IRevealer
 					pieces[i] = true;
 				}
 			}
-			String[] s = new String[7];
-			s[0] = StatCollector.translateToLocal("botaniamisc.armorset").replace("&", Paragraph.sign) + Paragraph.white + " " + StatCollector.translateToLocal("bbb.novasteel.armorSetEffect") + " (" + piecesAmount + "/4)";
-			s[1] = StatCollector.translateToLocal("bbb.novasteel.manaDiscount");
-			s[2] = StatCollector.translateToLocal("bbb.novasteel.invulnerability");
-			s[3] = (pieces[3] ? Paragraph.light_green : "") + " - " + StatCollector.translateToLocal(ItemRepo.novasteelHelm.getUnlocalizedName() + ".name");
-			s[4] = (pieces[2] ? Paragraph.light_green : "") + " - " + StatCollector.translateToLocal(ItemRepo.novasteelChest.getUnlocalizedName() + ".name");
-			s[5] = (pieces[1] ? Paragraph.light_green : "") + " - " + StatCollector.translateToLocal(ItemRepo.novasteelLegs.getUnlocalizedName() + ".name");
-			s[6] = (pieces[0] ? Paragraph.light_green : "") + " - " + StatCollector.translateToLocal(ItemRepo.novasteelBoots.getUnlocalizedName() + ".name");
-			for (String i : s)
+			list.add(StatCollector.translateToLocal("botaniamisc.armorset").replace("&", Paragraph.sign) + Paragraph.white + " " + StatCollector.translateToLocal("bbb.novasteel.armorSetEffect") + " (" + piecesAmount + "/4)");
+			list.add(StatCollector.translateToLocal("bbb.novasteel.manaDiscount"));
+			list.add(StatCollector.translateToLocal("bbb.novasteel.invulnerability"));
+			if (hasGaiaShard(stack))
 			{
-				list.add(i);
+				list.add(StatCollector.translateToLocal("bbb.gaiaShard.applied"));
 			}
+			list.add((pieces[3] ? Paragraph.light_green : "") + " - " + StatCollector.translateToLocal(ItemRepo.novasteelHelm.getUnlocalizedName() + ".name"));
+			list.add((pieces[2] ? Paragraph.light_green : "") + " - " + StatCollector.translateToLocal(ItemRepo.novasteelChest.getUnlocalizedName() + ".name"));
+			list.add((pieces[1] ? Paragraph.light_green : "") + " - " + StatCollector.translateToLocal(ItemRepo.novasteelLegs.getUnlocalizedName() + ".name"));
+			list.add((pieces[0] ? Paragraph.light_green : "") + " - " + StatCollector.translateToLocal(ItemRepo.novasteelBoots.getUnlocalizedName() + ".name"));
 		}
 		else
 		{
@@ -138,7 +138,7 @@ public class ItemNovasteelArmor extends ItemArmor implements IGoggles, IRevealer
 	@Override
 	public void onArmorTick(World world, EntityPlayer player, ItemStack stack)
 	{
-		if (!world.isRemote && stack.getItemDamage() > 0 && ManaItemHandler.requestManaExact(stack, player, MANA_PER_DAMAGE * 2, true))
+		if (!world.isRemote && stack.getItemDamage() > 0 && (hasGaiaShard(stack) || ManaItemHandler.requestManaExact(stack, player, MANA_PER_DAMAGE * 2, true)))
 		{
 			stack.setItemDamage(stack.getItemDamage() - 1);
 		}
@@ -147,7 +147,10 @@ public class ItemNovasteelArmor extends ItemArmor implements IGoggles, IRevealer
 	@Override
 	public void damageArmor(EntityLivingBase entity, ItemStack stack, DamageSource source, int damage, int slot)
 	{
-		ToolCommons.damageItem(stack, damage, entity, MANA_PER_DAMAGE);
+		if (!hasGaiaShard(stack))
+		{
+			ToolCommons.damageItem(stack, damage, entity, MANA_PER_DAMAGE);
+		}
 	}
 	
 	@Override
@@ -176,6 +179,20 @@ public class ItemNovasteelArmor extends ItemArmor implements IGoggles, IRevealer
 	public void setPhantomInk(ItemStack stack, boolean flag)
 	{
 		ItemNBTHelper.setBoolean(stack, "phantomInk", true);
+	}
+	
+	public boolean hasGaiaShard(ItemStack stack)
+	{
+		return stack.hasTagCompound() && stack.getTagCompound().getBoolean("GaiaShard");
+	}
+	
+	public void setGaiaShard(ItemStack stack, boolean flag)
+	{
+		if (!stack.hasTagCompound())
+		{
+			stack.setTagCompound(new NBTTagCompound());
+		}
+		stack.getTagCompound().setBoolean("GaiaShard", flag);
 	}
 	
 	@Override
