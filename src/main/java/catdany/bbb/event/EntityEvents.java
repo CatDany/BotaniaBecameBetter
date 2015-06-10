@@ -22,7 +22,7 @@ public class EntityEvents
 				&& e.source != DamageSource.lava
 				&& !(e.source.getEntity() instanceof EntityGaia))
 		{
-			Log.debug("wot > %s", e.source.damageType);
+			Log.debug("wot > %s * %s", e.source.damageType, e.ammount);
 			damageArmor(e);
 			e.ammount = 0F;
 		}
@@ -44,7 +44,7 @@ public class EntityEvents
 			if (stack != null)
 			{
 				ArmorProperties prop = ((ISpecialArmor)stack.getItem()).getProperties(living, stack, source, amount, i);
-				double absorb = amount * prop.AbsorbRatio;
+				double absorb = amount * (source.isUnblockable() ? 25 : prop.AbsorbRatio);
                 if (absorb > 0)
                 {
                     int itemDamage = (int)(absorb / 25D < 1 ? 1 : absorb / 25D);
