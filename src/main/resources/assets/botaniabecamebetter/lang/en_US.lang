@@ -54,11 +54,13 @@ botania.page.Bag1=Creating &1Mana Infused Canvas&0
 botania.page.Bag2=&0It's magic, you know!&r
 
 botania.entry.Novasteel=Novasteel
-botania.page.Novasteel0=There are mysterious sparks in the sky that sometimes appear and flash really bright. &4Novas&0 they call them. Their power is insane, if only mortals could use it... Some people made theories about infusing matter of all dimensions, such as &4Alfheim&0, &4Muspelheim&0 and &4Midgard&0 to create &4Novamatter&0. But there's really nothing more we know about it. 
-botania.page.Novasteel1=
-botania.page.Novasteel2=
-botania.page.Novasteel3=
-botania.page.Novasteel4=
+botania.page.Novasteel0=There are mysterious sparks in the sky that sometimes appear and flash really bright. &4Novas&0 they call them. Their power is insane, if only mortals could use it...
+botania.page.Novasteel1=Recently, when the bridge between &4Minecrafters&0 and &4Elves&0 was established, together we found a way to condense matter of several worlds: &4Midgard&0, &4Alfheim&0 and &4Muspelheim&0, and charge it with the energy of &4Novas&0 to get a very powerful material - &1Novasteel&0.
+botania.page.Novasteel2=There are some rules to performing the ritual of creating &1Novasteel&0 and they're briefly described here...<br>"Infuse condensed Terra-Gaia matter with a &1Nether Star&0 and drop it on the active beacon high in the sky", - they say, "supply it with two full pools worth of &4Mana&0 and wait til a &4Nova&0 explodes..."
+botania.page.Novasteel3=Infusing Terra-Gaia matter with a &1Nether Star&0
+botania.page.Novasteel4=Ritual of creating &1Novasteel&0 in action.
+botania.page.Novasteel5=The beacon is sucking &4Mana&0 from &1Mana Pools&0 and distributing it directly to &1Infused with Nether Star Piece of Terra-Gaia Matter&0 with a huge beam of energy.
+botania.page.Novasteel6=Creating very powerful armor using &1Novasteel&0
 
 botania.entry.HolyRing=Holy Ring
 botania.page.HolyRing0=Since olden times &4Elves&0 tend to make meaningful things that help them fight in their lives.<br>For some, this is just a ring, but for those who are faithful, magical forces never refuse to assist.<br>A ring, just as simple as this one, will protect you from &4Wither&0 effects with its sanctity, but will indeed cost you some amount of &4Mana&0.

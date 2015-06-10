@@ -31,6 +31,7 @@ import cpw.mods.fml.common.network.NetworkRegistry;
 	acceptedMinecraftVersions = Refs.MCVERSION
 )
 //TODO: [Suggestion] Add Dice of Fate rebinding
+//TODO: [Suggestion] Add Invisible+Stronger Gaia boss (III)
 public class BBB
 {
 	@Mod.Instance

@@ -43,7 +43,7 @@ public class RenderEvents
 			}
 			else if (ItemNovasteelArmor.isFullNovasteel(e.entityPlayer))
 			{
-				float[] colors = {0.9764705882352941F, 1.0F, 0.3607843137254902F, 0.9F};
+				float[] colors = {0.9764705882352941F, 1.0F, 0.3607843137254902F};
 				if (areWeCurrentlyRenderingSenpai)
 				{
 					colors[0] = 0.4F;
