@@ -1,3 +1,9 @@
+Known Bugs:
+- When sharing entries, it shows wrong unlocalized name in chat (e.g. botania.entry.botania.entry.MYENTRYNAME)
+
+1.7.10-ALPHA-0.1-13
+- Added fancier crafting for Novasteel, also there's a Lexica Botania entry for that too
+
 1.7.10-ALPHA-0.1-12
 - Added Holy Ring (anti-wither bauble)
 - Added Dice of Fate rebinding
