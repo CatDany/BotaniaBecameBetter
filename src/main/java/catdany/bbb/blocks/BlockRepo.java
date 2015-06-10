@@ -1,6 +1,5 @@
 package catdany.bbb.blocks;
 
-import vazkii.botania.api.BotaniaAPI;
 import catdany.bbb.Refs;
 import catdany.bbb.tile.TileFlowerHydrafatus;
 import catdany.bbb.tile.TileFlowerRedahlia;

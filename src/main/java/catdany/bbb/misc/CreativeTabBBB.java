@@ -1,9 +1,9 @@
 package catdany.bbb.misc;
 
-import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import catdany.bbb.Refs;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 public class CreativeTabBBB extends CreativeTabs
 {

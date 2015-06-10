@@ -1,7 +1,6 @@
 package catdany.bbb.items;
 
 import catdany.bbb.misc.ArmorType;
-import vazkii.botania.api.BotaniaAPI;
 
 public class ItemRepo
 {

@@ -16,7 +16,6 @@ import vazkii.botania.api.mana.IManaPool;
 import vazkii.botania.api.mana.spark.ISparkAttachable;
 import vazkii.botania.api.mana.spark.ISparkEntity;
 import vazkii.botania.api.mana.spark.SparkHelper;
-import catdany.bbb.Log;
 
 public class TileManaSpawner extends TileEntity implements ISparkAttachable
 {

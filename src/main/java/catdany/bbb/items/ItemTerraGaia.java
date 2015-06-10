@@ -15,7 +15,6 @@ import vazkii.botania.api.mana.IManaPool;
 import vazkii.botania.common.Botania;
 import vazkii.botania.common.block.tile.mana.TilePool;
 import catdany.bbb.BBB;
-import catdany.bbb.Log;
 import catdany.bbb.Refs;
 import catdany.bbb.libs.IconRegHelper;
 import cpw.mods.fml.common.registry.GameRegistry;

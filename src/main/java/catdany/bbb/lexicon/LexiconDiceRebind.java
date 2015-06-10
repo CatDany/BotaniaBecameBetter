@@ -12,8 +12,6 @@ import vazkii.botania.common.lexicon.page.PageCraftingRecipe;
 import vazkii.botania.common.lexicon.page.PageText;
 import catdany.bbb.libs.ArrayUtils;
 
-import com.google.common.collect.Lists;
-
 public class LexiconDiceRebind extends LexiconEntry 
 {
 	private static final IRecipe[] exampleRecipes =

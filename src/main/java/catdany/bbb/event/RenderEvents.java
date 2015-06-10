@@ -5,7 +5,6 @@ import net.minecraft.client.renderer.InventoryEffectRenderer;
 import net.minecraft.world.World;
 import net.minecraftforge.client.event.RenderPlayerEvent;
 import vazkii.botania.common.Botania;
-import catdany.bbb.Log;
 import catdany.bbb.Refs;
 import catdany.bbb.items.ItemNovasteelArmor;
 import catdany.bbb.libs.PlayerUtils;

@@ -3,7 +3,6 @@ package catdany.bbb.gui;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
 import catdany.bbb.BBB;
-import catdany.bbb.Log;
 import cpw.mods.fml.common.network.IGuiHandler;
 
 public class GuiHandler implements IGuiHandler

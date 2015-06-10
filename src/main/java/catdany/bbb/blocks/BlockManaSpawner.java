@@ -1,6 +1,5 @@
 package catdany.bbb.blocks;
 
-import java.util.ArrayList;
 import java.util.Random;
 
 import net.minecraft.block.BlockContainer;
@@ -13,7 +12,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.tileentity.TileEntityMobSpawner;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
 import catdany.bbb.BBB;

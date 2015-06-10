@@ -1,6 +1,5 @@
 package catdany.bbb.libs;
 
-import cpw.mods.fml.common.FMLLog;
 import net.minecraft.util.StatCollector;
 
 public class CooldownHelper

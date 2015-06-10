@@ -21,7 +21,6 @@ import vazkii.botania.api.subtile.ISpecialFlower;
 import vazkii.botania.api.wand.IWandHUD;
 import vazkii.botania.api.wand.IWandable;
 import catdany.bbb.BBB;
-import catdany.bbb.Log;
 import catdany.bbb.Refs;
 import catdany.bbb.lexicon.LexiconHooks;
 import catdany.bbb.libs.IconRegHelper;

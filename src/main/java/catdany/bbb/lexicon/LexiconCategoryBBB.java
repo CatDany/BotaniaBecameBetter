@@ -1,8 +1,8 @@
 package catdany.bbb.lexicon;
 
-import catdany.bbb.Refs;
 import net.minecraft.util.ResourceLocation;
 import vazkii.botania.api.lexicon.LexiconCategory;
+import catdany.bbb.Refs;
 
 public class LexiconCategoryBBB extends LexiconCategory
 {

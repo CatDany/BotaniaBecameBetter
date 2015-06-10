@@ -2,7 +2,6 @@ package catdany.bbb.lexicon;
 
 import java.lang.reflect.Field;
 
-import sun.reflect.Reflection;
 import vazkii.botania.api.BotaniaAPI;
 import vazkii.botania.api.lexicon.LexiconEntry;
 import catdany.bbb.BBBCfg;

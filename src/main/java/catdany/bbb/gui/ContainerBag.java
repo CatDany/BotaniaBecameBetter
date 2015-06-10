@@ -4,7 +4,6 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
-import catdany.bbb.Log;
 import catdany.bbb.items.ItemBag;
 import catdany.bbb.misc.InventoryBag;
 

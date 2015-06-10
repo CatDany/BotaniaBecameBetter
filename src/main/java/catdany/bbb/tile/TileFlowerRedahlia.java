@@ -18,8 +18,6 @@ import vazkii.botania.api.BotaniaAPI;
 import vazkii.botania.api.internal.IManaNetwork;
 import vazkii.botania.api.mana.IManaBlock;
 import vazkii.botania.api.mana.IManaPool;
-import vazkii.botania.api.wand.IWandable;
-import catdany.bbb.Log;
 import catdany.bbb.blocks.BlockRepo;
 import catdany.bbb.libs.MathUtils;
 

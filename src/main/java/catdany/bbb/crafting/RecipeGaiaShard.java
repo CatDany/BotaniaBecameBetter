@@ -1,17 +1,11 @@
 package catdany.bbb.crafting;
 
-import vazkii.botania.api.item.IRelic;
-import vazkii.botania.common.item.ModItems;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Items;
 import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.world.World;
-import catdany.bbb.CraftingRecipes;
 import catdany.bbb.items.ItemNovasteelArmor;
 import catdany.bbb.items.ItemRepo;
-import catdany.bbb.libs.ItemUtils;
 
 public class RecipeGaiaShard implements IRecipe
 {
