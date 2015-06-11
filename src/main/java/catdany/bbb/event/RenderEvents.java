@@ -43,12 +43,12 @@ public class RenderEvents
 			else if (ItemNovasteelArmor.isFullNovasteel(e.entityPlayer))
 			{
 				float[] colors = {0.9764705882352941F, 1.0F, 0.3607843137254902F};
-				if (areWeCurrentlyRenderingSenpai)
+				/*if (areWeCurrentlyRenderingSenpai)
 				{
 					colors[0] = 0.4F;
 					colors[1] = 0.4F;
 					colors[2] = 1.0F;
-				}
+				}*/
 				if (world.rand.nextInt(7) == 0)
 				{
 					double pX = e.entityPlayer.posX;
