@@ -40,6 +40,6 @@ public class ItemNovasteel extends Item
 	@Override
 	public boolean hasEffect(ItemStack stack, int pass)
 	{
-		return true;
+		return !stack.hasTagCompound() || !stack.getTagCompound().hasKey("DisableGlow") || !stack.getTagCompound().getBoolean("DisableGlow");
 	}
 }
