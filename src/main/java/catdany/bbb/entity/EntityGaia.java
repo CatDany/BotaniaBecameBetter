@@ -346,7 +346,7 @@ public class EntityGaia extends EntityDoppleganger
 
 						if (hard && ticksExisted % 3 < 2)
 						{
-							spawnMissile();
+							shootMissile();
 							spawnMissiles = false;
 						}
 					}
@@ -405,7 +405,7 @@ public class EntityGaia extends EntityDoppleganger
 
 				if(spawnMissiles)
 				{
-					spawnMissile();
+					shootMissile();
 				}
 			}
 			else
@@ -420,7 +420,7 @@ public class EntityGaia extends EntityDoppleganger
 		}
 	}
 	
-	private void spawnMissile()
+	private void shootMissile()
 	{
 		if(!worldObj.isRemote)
 		{
