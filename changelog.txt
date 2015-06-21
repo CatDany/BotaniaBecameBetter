@@ -1,6 +1,9 @@
 Known Bugs:
 - When sharing entries, it shows wrong unlocalized name in chat (e.g. botania.entry.botania.entry.MYENTRYNAME)
 
+1.7.10-ALPHA-0.1-16
+- Added a little technical feature. Novasteel won't glow if you cheat it with /give @p BotaniaBecameBetter:Novasteel 1 0 {DisableGlow:1}. That way it doesn't look glitched in some GUIs, like HQM book
+
 1.7.10-ALPHA-0.1-15
 - Fixed: any unblockable damage (e.g. void) wouldn't deal damage to armor nor drain Mana [thanks @Xirenec_ for finding this bug]
 
